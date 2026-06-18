@@ -19,6 +19,11 @@ public class Solution01 {
         // System.out.println("commands : " + Arrays.toString(commands));
         System.out.println("commands : " + Arrays.deepToString(commands));
 
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("i : " + i);
+            System.out.println("array[i] : " + array[i]);
+        }
+
         int[] answer = {};
         return answer;
     }
