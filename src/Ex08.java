@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class Ex08 {
@@ -20,5 +21,17 @@ public class Ex08 {
         System.out.println(set.contains("제나"));
         System.out.println(set.contains("리브"));
         System.out.println("set = " + set);
+
+        // add, remove, contain***
+        // get -> list, map
+        // put -> map. set -> list
+        Set<String> set2 = new HashSet<>(List.of("감", "밤", "대추", "대추"));
+        System.out.println(set2);
+
+        for (String s : set2) {
+            System.out.println("s = " + s);
+        }
+
+        // size / array length.
     }
 }
