@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
-
 public class Ex03 {
+    public static void main(String[] args) {
+        // array & for & for-each
+
+    }
 }
