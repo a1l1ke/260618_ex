@@ -13,5 +13,9 @@ public class Ex04 {
             System.out.println("idx = " + idx);
             System.out.println("arr[idx] = " + arr[idx]);
         }
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.println("i = " + i);
+            System.out.println("arr[" + i + "] = " + arr[i]);
+        }
     }
 }
