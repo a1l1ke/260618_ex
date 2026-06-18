@@ -20,5 +20,11 @@ public class Ex07 {
         System.out.println("map = " + map);
         map.remove("cherry");
         System.out.println("map = " + map);
+
+        System.out.println("map.size() = " + map.size());
+        System.out.println("map.containsKey(\"apple\") = " + map.containsKey("apple"));
+        System.out.println("map.containsKey(\"mango\") = " + map.containsKey("mango"));
+        System.out.println("map.containsValue(1000) = " + map.containsValue(1000));
+        System.out.println("map.containsValue(10000) = " + map.containsValue(10000));
     }
 }
