@@ -38,5 +38,7 @@ public class Ex03 {
         arr4[1][2] = 200;
         System.out.println(Arrays.toString(arr4));
         System.out.println(Arrays.deepToString(arr4));
+        int[][] arr5 = {{1, 2, 3}, {2, 4, 5}};
+        System.out.println(Arrays.deepToString(arr5));
     }
 }
