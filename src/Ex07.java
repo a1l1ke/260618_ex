@@ -26,5 +26,26 @@ public class Ex07 {
         System.out.println("map.containsKey(\"mango\") = " + map.containsKey("mango"));
         System.out.println("map.containsValue(1000) = " + map.containsValue(1000));
         System.out.println("map.containsValue(10000) = " + map.containsValue(10000));
+
+        System.out.println("map.keySet() = " + map.keySet());
+        for (String s : map.keySet()) {
+            System.out.println("s = " + s);
+            System.out.println("map.get(s) = " + map.get(s));
+        }
+        System.out.println("map.values() = " + map.values());
+        for (Integer v : map.values()) {
+            System.out.println("v = " + v);
+        }
+        System.out.println("map.entrySet() = " + map.entrySet());
+        for (Map.Entry<String, Integer> e : map.entrySet()) {
+            System.out.println("e = " + e);
+            System.out.println("e.getKey() = " + e.getKey());
+            System.out.println("e.getValue() = " + e.getValue());
+        }
+        // put (key, value)
+        // get (key)
+        // remove (key)
+        // size. / keySet, values, entrySet -> forEach
+        // default, contains...
     }
 }
