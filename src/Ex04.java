@@ -6,5 +6,12 @@ public class Ex04 {
             System.out.println("i = " + i);
             System.out.println("arr[" + i + "] = " + arr[i]);
         }
+        for (int i = 0; i < arr.length; i++) {
+            int idx = arr.length - 1 - i;
+//            System.out.println("i = " + (arr.length - 1 - i));
+//            System.out.println("arr[" + (arr.length - 1 - i) + "] = " + arr[arr.length - 1 - i]);
+            System.out.println("idx = " + idx);
+            System.out.println("arr[idx] = " + arr[idx]);
+        }
     }
 }
