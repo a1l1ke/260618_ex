@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Solution01 {
@@ -26,6 +27,7 @@ public class Solution01 {
         // }
 
         // for (int i = 0; i < commands.length; i++) {
+        List<Integer> answerList = new ArrayList<>();
         for (int[] command : commands) {
             // System.out.println("i : " + i);
             // System.out.println("commands[i] : " + commands[i]);
@@ -45,9 +47,19 @@ public class Solution01 {
                 // System.out.println("v : " + array[ii]);
                 list.add(array[ii]);
             }
+            // System.out.println(list);
+            list.sort(Comparator.naturalOrder());
+            // 오름차순, 데이터가 등장하는 방향이 곧 데이터가 크다고 분류되는 정렬의 형식
+            // System.out.println(list);
+            // System.out.println("답 : " + list.get(k - 1)); // 인덱스이므로 k값에서 -1
+            answerList.add(list.get(k - 1));
         }
 
-        int[] answer = {};
-        return answer;
+        // int[] answer = {};
+        int[] answer = new int[commands.length];
+        for (int i = 0; i < answer.length; i++) {
+            answer[i] = answerList.get(i);
+        }
+        return answer; // 나중에 가면 stream 등으로 한 번에 변환할 수도 있다
     }
 }
