@@ -23,5 +23,14 @@ public class Ex04 {
                 {false, false, false, false, true} // // i = 2
         };
         System.out.println("Arrays.deepToString(matrix) = " + Arrays.deepToString(matrix));
+        for (int i = 0; i < matrix.length; i++) {
+            System.out.println("i = " + i);
+            System.out.println("Arrays.toString(matrix[i] = " + Arrays.toString(matrix[i]));
+//            for (int j = 0; j < matrix[i].length; j++) {
+            for (int j = 0; j < matrix[0].length; j++) { // 이중 이상의 배열이더라도 배열은 같이 속한 단계의 길은 모두 일치
+                System.out.println("i = " + i + " j = " + j);
+                System.out.println("matrix[i][j] = " + matrix[i][j]);
+            }
+        }
     }
 }
