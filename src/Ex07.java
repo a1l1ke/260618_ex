@@ -12,5 +12,13 @@ public class Ex07 {
 //        map.put("banana", 20000);
         map.put("banana", map.get("banana") * 10);
         System.out.println("map = " + map);
+
+        // Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+        System.out.println("map.get(\"cherry\") = " + map.get("cherry")); // null
+//        map.put("cherry", map.get("cherry") * 10);
+        map.put("cherry", map.getOrDefault("cherry", 0) * 10);
+        System.out.println("map = " + map);
+        map.remove("cherry");
+        System.out.println("map = " + map);
     }
 }
