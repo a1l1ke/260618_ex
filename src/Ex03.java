@@ -30,5 +30,13 @@ public class Ex03 {
         // 배열 리터럴 {}
         int[] arr3 = {1, 2, 3};
         System.out.println(Arrays.toString(arr3));
+        // 다중배열 선언, 인덱스 호출, toString
+//        int[][] arr4 = new int[2][3]; // 앞에 있는게 밖을 감싸는 형태
+        // 2개 -> (3개)를 반복하는 형태
+        int[][] arr4 = new int[2][3];
+        arr4[0][1] = 100;
+        arr4[1][2] = 200;
+        System.out.println(Arrays.toString(arr4));
+        System.out.println(Arrays.deepToString(arr4));
     }
 }
