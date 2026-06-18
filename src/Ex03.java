@@ -13,5 +13,7 @@ public class Ex03 {
         System.out.println("arr1 = " + arr1);
         arr1 = new int[5];
         System.out.println("arr1 = " + arr1); // immutable -> 대체
+        int arr2[] = new int[10]; // 이것도 되긴 하는데 권장은 아님
+
     }
 }
