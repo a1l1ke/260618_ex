@@ -19,5 +19,10 @@ public class Ex03 {
         System.out.println("arr1[0] = " + arr1[0]); // 기본값 0.
         arr1[0] = 10; // 대입, 수정, 호출 -> 인덱스.
         System.out.println("arr1[0] = " + arr1[0]);
+        System.out.println("arr1.length = " + arr1.length);
+        // 인덱스는 0부터 시작하기 때문에 일반적으로 호출 가능한 인덱스는 length - 1
+//        System.out.println("arr1[arr1.length] = " + arr1[arr1.length]);
+        // Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+        // <= arr.length - 1, < arr.length
     }
 }
