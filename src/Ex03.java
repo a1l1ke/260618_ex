@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Ex03 {
     public static void main(String[] args) {
         // array & for & for-each
@@ -14,6 +16,8 @@ public class Ex03 {
         arr1 = new int[5];
         System.out.println("arr1 = " + arr1); // immutable -> 대체
         int arr2[] = new int[10]; // 이것도 되긴 하는데 권장은 아님
-
+        System.out.println("arr1[0] = " + arr1[0]); // 기본값 0.
+        arr1[0] = 10; // 대입, 수정, 호출 -> 인덱스.
+        System.out.println("arr1[0] = " + arr1[0]);
     }
 }
