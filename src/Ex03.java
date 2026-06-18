@@ -24,5 +24,8 @@ public class Ex03 {
 //        System.out.println("arr1[arr1.length] = " + arr1[arr1.length]);
         // Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
         // <= arr.length - 1, < arr.length
+        // 배열을 그냥 찍으면 객체의 해시값이 나옴
+        System.out.println(Arrays.toString(arr1));
+        System.out.println(Arrays.toString(arr2));
     }
 }
