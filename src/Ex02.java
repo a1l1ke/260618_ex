@@ -23,5 +23,17 @@ public class Ex02 {
             System.out.println("w = " + w--);
         }
         // scope.
+
+        // 이중 for문
+        for (int i = 1; i <= 9; i++) {
+//            for (int i = 1; i <= 9; i++) { // 스코프 겹침 문제
+//            for (int j = 1; j <= 9; i++) { // 증감식을 잘못 지정
+            System.out.println("i = " + i);
+            for (int j = 1; j <= 9; j++) {
+                System.out.println("j = " + j);
+                System.out.println(i + " * " + j + " = " + i * j);
+                // 맨 안에 있는 루프가 가장 먼저 종료되고 나서야 다음 루프의 다음 단계로 진행한다
+            }
+        }
     }
 }
