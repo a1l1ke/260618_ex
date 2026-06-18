@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Ex03 {
     public static void main(String[] args) {
-        // array & for & for-each
+        // array
         int i1 = 1;
         int i2 = 2;
         int i3 = 3;
@@ -27,5 +27,8 @@ public class Ex03 {
         // 배열을 그냥 찍으면 객체의 해시값이 나옴
         System.out.println(Arrays.toString(arr1));
         System.out.println(Arrays.toString(arr2));
+        // 배열 리터럴 {}
+        int[] arr3 = {1, 2, 3};
+        System.out.println(Arrays.toString(arr3));
     }
 }
