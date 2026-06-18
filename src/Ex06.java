@@ -46,5 +46,10 @@ public class Ex06 {
             list5.set(i, list5.get(i).repeat(2));
         }
         System.out.println("list5 = " + list5);
+
+        // for-each문
+        for (String v : list5) { // 제너릭에서 지정했던 타입이 readonly 변수로
+            System.out.println("v = " + v);
+        }
     }
 }
