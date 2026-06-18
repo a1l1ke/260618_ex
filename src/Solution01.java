@@ -24,6 +24,15 @@ public class Solution01 {
             System.out.println("array[i] : " + array[i]);
         }
 
+        for (int i = 0; i < commands.length; i++) {
+            // System.out.println("i : " + i);
+            // System.out.println("commands[i] : " + commands[i]);
+            for (int j = 0; j < commands[0].length; j++) {
+                System.out.println("i : " + i + " j : " + i);
+                System.out.println("commands[i][j] : " + commands[i][j]);
+            }
+        }
+
         int[] answer = {};
         return answer;
     }
