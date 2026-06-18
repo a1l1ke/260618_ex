@@ -38,5 +38,13 @@ public class Ex06 {
         // get, set -> index 기반 조회, 수정
         // remove -> 인덱스 또는 값 기반 삭제
         // size `()` -> 길이. for문.
+
+        // for문
+        for (int i = 0; i < list5.size(); i++) {
+            System.out.println("i = " + i);
+            System.out.println("list5.get(i) = " + list5.get(i));
+            list5.set(i, list5.get(i).repeat(2));
+        }
+        System.out.println("list5 = " + list5);
     }
 }
