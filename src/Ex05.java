@@ -10,5 +10,12 @@ public class Ex05 {
             // i는 위의 블록 내 혹은 for()안에 있는 변화식에 영향을 받아야하기 때문에
             // 조작이 가능함.
         }
+        for (char c : charArr) { // iter - iteration
+            System.out.println("c = " + c); // v를 많이 씀 혹은 타입의 이니셜
+            c -= 32;
+            System.out.println("c = " + c);
+            // 앞에 배치되면 지역변수는 'readonly' -> 새롭게 만들어져서 대입되는 친구
+            System.out.println("Arrays.toString(charArr) = " + Arrays.toString(charArr));
+        }
     }
 }
