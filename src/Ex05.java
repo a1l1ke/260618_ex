@@ -17,5 +17,20 @@ public class Ex05 {
             // 앞에 배치되면 지역변수는 'readonly' -> 새롭게 만들어져서 대입되는 친구
             System.out.println("Arrays.toString(charArr) = " + Arrays.toString(charArr));
         }
+        char[][] charMatrix = {
+                {'o', 'o', 'x'},
+                {'x', 'o', 'x'},
+                {'x', 'o', 'o'},
+        };
+        int i = 0;
+        int j = 0;
+        for (char[] row : charMatrix) {
+            i++;
+            for (char col : row) {
+                j++;
+                System.out.println("row = " + row); // 인덱스를 못씀
+                System.out.println("col = " + col);
+            }
+        }
     }
 }
