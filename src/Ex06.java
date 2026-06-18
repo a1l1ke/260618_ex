@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Ex06 {
@@ -25,5 +26,17 @@ public class Ex06 {
         list.remove(0);
         System.out.println("list = " + list);
         System.out.println("list.size() = " + list.size());
+        List<Integer> list4 = List.of(1, 2, 3, 5, 8, 13); // !!!
+        System.out.println("list4 = " + list4);
+        // java 배열 리터럴을 바로 패러미터에 넣을 수 X.
+//        List<String> list5 = Arrays.asList(new String[]{"a", "b", "c"});
+        String[] stringArr = {"a", "b", "c"}; // 초기화할 때만 순수 리터럴 허용
+        List<String> list5 = Arrays.asList(stringArr);
+        list5.set(2, "C");
+        System.out.println("list5 = " + list5);
+        // add -> 추가
+        // get, set -> index 기반 조회, 수정
+        // remove -> 인덱스 또는 값 기반 삭제
+        // size `()` -> 길이. for문.
     }
 }
